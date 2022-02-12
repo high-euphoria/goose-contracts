@@ -16,7 +16,7 @@ module.exports = {
   },
   networks: {
     mainnet: {
-      provider: () => new HDWalletProvider("65841762a510a925032ce4653771035dd78d564257e12eaf77c2bb2024262806", `https://api.avax.network/ext/bc/C/rpc`),
+      provider: () => new HDWalletProvider("", `https://api.avax.network/ext/bc/C/rpc`),
       network_id: 43114,
       confirmations: 2,      // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 300,  // # of blocks before a deployment times out  (minimum/default: 50)
@@ -42,7 +42,7 @@ module.exports = {
       settings: {
        optimizer: {
          enabled: true,
-         runs: 999999999
+         runs: 999
        },
       }
     },

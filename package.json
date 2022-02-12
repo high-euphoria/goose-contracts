@@ -12,7 +12,7 @@
     "merge": "sol-merger \"./contracts/**/*.sol\" ./merged_contracts",
     "test": "rm -rf ./compiled && cross-env NODE_ENV=development truffle compile && cross-env NODE_ENV=development truffle migrate --network bsctestnet",
     "main": "rm -rf ./compiled && cross-env NODE_ENV=production truffle compile && cross-env NODE_ENV=production truffle migrate --network mainnet",
-    "vm": "truffle run verify MasterChef@0x12f3E9996D4E14a490Ec19D34A0eAD70FE9369d9 HighToken@0x64e8450AaCA61b83E805965225ac7E9e0D65d5A0 --network mainnet",
+    "vm": "truffle run verify MasterChef HighToken --network mainnet",
     "vt": "truffle run verify Flashswap@0xF0C84EF2c913BD484DeD559465883A8b650dd6bA --network bsctestnet "
   },
   "dependencies": {
